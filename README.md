@@ -1,19 +1,57 @@
-# 🎈 Blank app template
+# 雨刷尺寸查询系统
 
-A simple Streamlit app template for you to modify!
+一个简洁美观的雨刷尺寸查询网站，支持从Excel表格导入数据并快速搜索。
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 功能特点
 
-### How to run it on your own machine
+- 📁 支持导入Excel文件（.xlsx/.xls格式）
+- 🔍 快速搜索车型信息
+- 📱 响应式设计，支持移动端
+- 🎨 现代化UI设计
+- 📝 提供Excel模板下载
 
-1. Install the requirements
+## Excel表格格式
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+表格需包含以下列：
 
-2. Run the app
+| 品牌 | 车型 | 年份 | 主驾 | 副驾 | 接头 | 后雨刷 |
+|------|------|------|------|------|------|--------|
+| 丰田 | 卡罗拉 | 2020-2023 | 26寸 | 16寸 | U型 | 12寸 |
+| 本田 | 雅阁 | 2018-2022 | 26寸 | 18寸 | U型 | 无 |
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 使用方法
+
+1. 打开 `index.html` 文件
+2. 点击"导入Excel数据"按钮上传数据文件
+3. 在搜索栏输入车型或品牌名称
+4. 点击搜索或按回车键查看结果
+
+## 下载模板
+
+点击页面底部的"下载Excel模板"按钮，可下载包含示例数据的Excel模板文件。
+
+## 技术栈
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- SheetJS (xlsx) - Excel文件处理
+
+## 浏览器支持
+
+支持所有现代浏览器：
+- Chrome
+- Firefox
+- Safari
+- Edge
+
+## 注意事项
+
+- Excel文件的第一行必须是表头（品牌、车型、年份等）
+- 搜索功能会匹配品牌和车型字段
+- 文件完全在浏览器本地处理，不会上传到服务器
+
+## 部署
+
+将所有文件上传到Web服务器即可使用。也可以直接双击 `index.html` 在本地浏览器中打开使用。
+
